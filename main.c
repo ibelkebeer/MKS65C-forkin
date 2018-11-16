@@ -22,7 +22,7 @@ int main(){
   }else{
     int status;
     int pid = wait(&status);
-    printf("Pid of completed child: %d\nTime child slept: %d\nParent process completed\n", pid, WEXITSTATUS(status));
+    printf("Pid of completed child: %d\nTime child slept: %d seconds\nParent process completed\n", pid, WEXITSTATUS(status));
   }
   return 0;
 }
